@@ -1,2 +1,0 @@
-# classy
-Class Styling
