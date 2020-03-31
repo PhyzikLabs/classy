@@ -1,474 +1,83 @@
+$sizes: '-xxl', '-xl', '-lg', '-ml', '-md', '-sm', '-xs';
+$screenSize: $xxlScreen, $xlScreen, $lgScreen, $mlScreen, $mdScreen, $smScreen, $xsScreen;
+$directions: padding, padding-top, padding-right, padding-bottom, padding-left, (padding-left, padding-right), (padding-top, padding-bottom);
+$directionAb: '','t','r','b','l', 'x', 'y';
+$variants:
+    ('-uns'),
+    ('-ini'),
+    ('0', '1', '2', '3', '4', '5', '6'),
+    ('5', '10', '15', '20', '25', '30', '35', '40', '45', '50', '55', '60', '65', '70', '75', '80', '85', '90', '95', '100'),
+    ('01-rem','02-rem','03-rem','04-rem','05-rem','06-rem','07-rem','08-rem','09-rem', '1-rem','2-rem','3-rem','4-rem','5-rem','6-rem','7-rem','8-rem','9-rem'),
+    ('1-px', '2-px', '3-px', '4-px', '5-px', '6-px', '7-px', '8-px', '9-px', '10-px', '20-px', '30-px', '40-px', '50-px', '60-px', '70-px', '80-px', '90-px', '100-px', '200-px', '300-px', '400-px');
+$variantValues:
+    (unset),
+    (initial),
+    (0, $size-1, $size-2, $size-3, $size-4, $size-5, $size-6),
+    (5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100%),
+    (0.1rem, 0.2rem, 0.3rem, 0.4rem, 0.5rem, 0.6rem, 0.7rem, 0.8rem, 0.9rem, 1rem, 2rem, 3rem, 4rem, 5rem, 6rem, 7rem, 8rem, 9rem),
+    (1px, 2px, 3px, 4px, 5px, 6px, 7px, 8px, 9px, 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px, 200px, 300px, 400px);
 
-.p0{padding: 0;}
+$count: 0;
 
-.p1{padding: $size-1}
-.p2{padding: $size-2}
-.p3{padding: $size-3}
-.p4{padding: $size-4}
-.p5{padding: $size-5}
-.p6{padding: $size-6}
-
-// %
-.p10{padding: 10%;}
-.p20{padding: 20%;}
-.p30{padding: 30%;}
-.p40{padding: 40%;}
-.p50{padding: 50%;}
-.p60{padding: 60%;}
-.p70{padding: 70%;}
-.p80{padding: 80%;}
-.p90{padding: 90%;}
-.p100{padding: 100%;}
-
-// rem
-.p0-rem    {padding: 0;}
-.p01-rem   {padding: 0.1rem;}
-.p02-rem   {padding: 0.2rem;}
-.p03-rem   {padding: 0.3rem;}
-.p04-rem   {padding: 0.4rem;}
-.p05-rem   {padding: 0.5rem;}
-.p06-rem   {padding: 0.6rem;}
-.p07-rem   {padding: 0.7rem;}
-.p08-rem   {padding: 0.8rem;}
-.p09-rem   {padding: 0.9rem;}
-.p1-rem    {padding: 1rem;}
-.p2-rem    {padding: 2rem;}
-.p3-rem    {padding: 3rem;}
-.p4-rem    {padding: 4rem;}
-.p5-rem    {padding: 5rem;}
-.p6-rem    {padding: 6rem;}
-.p7-rem    {padding: 7rem;}
-.p8-rem    {padding: 8rem;}
-.p9-rem    {padding: 9rem;}
-
-// px
-.p0-px   {padding: 0;}
-.p1-px   {padding: 1px;}
-.p2-px   {padding: 2px;}
-.p3-px   {padding: 3px;}
-.p4-px   {padding: 4px;}
-.p5-px   {padding: 5px;}
-.p6-px   {padding: 6px;}
-.p7-px   {padding: 7px;}
-.p8-px   {padding: 8px;}
-.p9-px   {padding: 9px;}
-.p10-px  {padding: 10px;}
-.p20-px  {padding: 20px;}
-.p30-px  {padding: 30px;}
-.p40-px  {padding: 40px;}
-.p50-px  {padding: 50px;}
-.p60-px  {padding: 60px;}
-.p70-px  {padding: 70px;}
-.p80-px  {padding: 80px;}
-.p90-px  {padding: 90px;}
-.p100-px {padding: 100px;}
-.p200-px {padding: 200px;}
-.p300-px {padding: 300px;}
-.p400-px {padding: 400px;}
-
-
-
-.pr0{padding-right: 0;}
-
-.pr1{padding-right: $size-1}
-.pr2{padding-right: $size-2}
-.pr3{padding-right: $size-3}
-.pr4{padding-right: $size-4}
-.pr5{padding-right: $size-5}
-.pr6{padding-right: $size-6}
-
-// %
-.pr10{padding-right: 10%;}
-.pr20{padding-right: 20%;}
-.pr30{padding-right: 30%;}
-.pr40{padding-right: 40%;}
-.pr50{padding-right: 50%;}
-.pr60{padding-right: 60%;}
-.pr70{padding-right: 70%;}
-.pr80{padding-right: 80%;}
-.pr90{padding-right: 90%;}
-.pr100{padding-right: 100%;}
-
-// rem
-.pr0-rem    {padding-right: 0;}
-.pr01-rem   {padding-right: 0.1rem;}
-.pr02-rem   {padding-right: 0.2rem;}
-.pr03-rem   {padding-right: 0.3rem;}
-.pr04-rem   {padding-right: 0.4rem;}
-.pr05-rem   {padding-right: 0.5rem;}
-.pr06-rem   {padding-right: 0.6rem;}
-.pr07-rem   {padding-right: 0.7rem;}
-.pr08-rem   {padding-right: 0.8rem;}
-.pr09-rem   {padding-right: 0.9rem;}
-.pr1-rem    {padding-right: 1rem;}
-.pr2-rem    {padding-right: 2rem;}
-.pr3-rem    {padding-right: 3rem;}
-.pr4-rem    {padding-right: 4rem;}
-.pr5-rem    {padding-right: 5rem;}
-.pr6-rem    {padding-right: 6rem;}
-.pr7-rem    {padding-right: 7rem;}
-.pr8-rem    {padding-right: 8rem;}
-.pr9-rem    {padding-right: 9rem;}
-
-// px
-.pr0-px   {padding-right: 0;}
-.pr1-px   {padding-right: 1px;}
-.pr2-px   {padding-right: 2px;}
-.pr3-px   {padding-right: 3px;}
-.pr4-px   {padding-right: 4px;}
-.pr5-px   {padding-right: 5px;}
-.pr6-px   {padding-right: 6px;}
-.pr7-px   {padding-right: 7px;}
-.pr8-px   {padding-right: 8px;}
-.pr9-px   {padding-right: 9px;}
-.pr10-px  {padding-right: 10px;}
-.pr20-px  {padding-right: 20px;}
-.pr30-px  {padding-right: 30px;}
-.pr40-px  {padding-right: 40px;}
-.pr50-px  {padding-right: 50px;}
-.pr60-px  {padding-right: 60px;}
-.pr70-px  {padding-right: 70px;}
-.pr80-px  {padding-right: 80px;}
-.pr90-px  {padding-right: 90px;}
-.pr100-px {padding-right: 100px;}
-.pr200-px {padding-right: 200px;}
-.pr300-px {padding-right: 300px;}
-.pr400-px {padding-right: 400px;}
-
-
-.pl0{padding-left: 0;}
-
-.pl1{padding-left: $size-1}
-.pl2{padding-left: $size-2}
-.pl3{padding-left: $size-3}
-.pl4{padding-left: $size-4}
-.pl5{padding-left: $size-5}
-.pl6{padding-left: $size-6}
-
-// %
-.pl10{padding-left: 10%;}
-.pl20{padding-left: 20%;}
-.pl30{padding-left: 30%;}
-.pl40{padding-left: 40%;}
-.pl50{padding-left: 50%;}
-.pl60{padding-left: 60%;}
-.pl70{padding-left: 70%;}
-.pl80{padding-left: 80%;}
-.pl90{padding-left: 90%;}
-.pl100{padding-left: 100%;}
-
-// rem
-.pl0-rem    {padding-left: 0;}
-.pl01-rem   {padding-left: 0.1rem;}
-.pl02-rem   {padding-left: 0.2rem;}
-.pl03-rem   {padding-left: 0.3rem;}
-.pl04-rem   {padding-left: 0.4rem;}
-.pl05-rem   {padding-left: 0.5rem;}
-.pl06-rem   {padding-left: 0.6rem;}
-.pl07-rem   {padding-left: 0.7rem;}
-.pl08-rem   {padding-left: 0.8rem;}
-.pl09-rem   {padding-left: 0.9rem;}
-.pl1-rem    {padding-left: 1rem;}
-.pl2-rem    {padding-left: 2rem;}
-.pl3-rem    {padding-left: 3rem;}
-.pl4-rem    {padding-left: 4rem;}
-.pl5-rem    {padding-left: 5rem;}
-.pl6-rem    {padding-left: 6rem;}
-.pl7-rem    {padding-left: 7rem;}
-.pl8-rem    {padding-left: 8rem;}
-.pl9-rem    {padding-left: 9rem;}
-
-// px
-.pl0-px   {padding-left: 0;}
-.pl1-px   {padding-left: 1px;}
-.pl2-px   {padding-left: 2px;}
-.pl3-px   {padding-left: 3px;}
-.pl4-px   {padding-left: 4px;}
-.pl5-px   {padding-left: 5px;}
-.pl6-px   {padding-left: 6px;}
-.pl7-px   {padding-left: 7px;}
-.pl8-px   {padding-left: 8px;}
-.pl9-px   {padding-left: 9px;}
-.pl10-px  {padding-left: 10px;}
-.pl20-px  {padding-left: 20px;}
-.pl30-px  {padding-left: 30px;}
-.pl40-px  {padding-left: 40px;}
-.pl50-px  {padding-left: 50px;}
-.pl60-px  {padding-left: 60px;}
-.pl70-px  {padding-left: 70px;}
-.pl80-px  {padding-left: 80px;}
-.pl90-px  {padding-left: 90px;}
-.pl100-px {padding-left: 100px;}
-.pl200-px {padding-left: 200px;}
-.pl300-px {padding-left: 300px;}
-.pl400-px {padding-left: 400px;}
-
-
-.pt0{padding-top: 0;}
-
-.pt1{padding-top: $size-1}
-.pt2{padding-top: $size-2}
-.pt3{padding-top: $size-3}
-.pt4{padding-top: $size-4}
-.pt5{padding-top: $size-5}
-.pt6{padding-top: $size-6}
-
-// %
-.pt10{padding-top: 10%;}
-.pt20{padding-top: 20%;}
-.pt30{padding-top: 30%;}
-.pt40{padding-top: 40%;}
-.pt50{padding-top: 50%;}
-.pt60{padding-top: 60%;}
-.pt70{padding-top: 70%;}
-.pt80{padding-top: 80%;}
-.pt90{padding-top: 90%;}
-.pt100{padding-top: 100%;}
-
-// rem
-.pt0-rem    {padding-top: 0;}
-.pt01-rem   {padding-top: 0.1rem;}
-.pt02-rem   {padding-top: 0.2rem;}
-.pt03-rem   {padding-top: 0.3rem;}
-.pt04-rem   {padding-top: 0.4rem;}
-.pt05-rem   {padding-top: 0.5rem;}
-.pt06-rem   {padding-top: 0.6rem;}
-.pt07-rem   {padding-top: 0.7rem;}
-.pt08-rem   {padding-top: 0.8rem;}
-.pt09-rem   {padding-top: 0.9rem;}
-.pt1-rem    {padding-top: 1rem;}
-.pt2-rem    {padding-top: 2rem;}
-.pt3-rem    {padding-top: 3rem;}
-.pt4-rem    {padding-top: 4rem;}
-.pt5-rem    {padding-top: 5rem;}
-.pt6-rem    {padding-top: 6rem;}
-.pt7-rem    {padding-top: 7rem;}
-.pt8-rem    {padding-top: 8rem;}
-.pt9-rem    {padding-top: 9rem;}
-
-// px
-.pt0-px   {padding-top: 0;}
-.pt1-px   {padding-top: 1px;}
-.pt2-px   {padding-top: 2px;}
-.pt3-px   {padding-top: 3px;}
-.pt4-px   {padding-top: 4px;}
-.pt5-px   {padding-top: 5px;}
-.pt6-px   {padding-top: 6px;}
-.pt7-px   {padding-top: 7px;}
-.pt8-px   {padding-top: 8px;}
-.pt9-px   {padding-top: 9px;}
-.pt10-px  {padding-top: 10px;}
-.pt20-px  {padding-top: 20px;}
-.pt30-px  {padding-top: 30px;}
-.pt40-px  {padding-top: 40px;}
-.pt50-px  {padding-top: 50px;}
-.pt60-px  {padding-top: 60px;}
-.pt70-px  {padding-top: 70px;}
-.pt80-px  {padding-top: 80px;}
-.pt90-px  {padding-top: 90px;}
-.pt100-px {padding-top: 100px;}
-.pt200-px {padding-top: 200px;}
-.pt300-px {padding-top: 300px;}
-.pt400-px {padding-top: 400px;}
-
-.pb0{padding-bottom: 0;}
-
-.pb1{padding-bottom: $size-1}
-.pb2{padding-bottom: $size-2}
-.pb3{padding-bottom: $size-3}
-.pb4{padding-bottom: $size-4}
-.pb5{padding-bottom: $size-5}
-.pb6{padding-bottom: $size-6}
-
-// %
-.pb10{padding-bottom: 10%;}
-.pb20{padding-bottom: 20%;}
-.pb30{padding-bottom: 30%;}
-.pb40{padding-bottom: 40%;}
-.pb50{padding-bottom: 50%;}
-.pb60{padding-bottom: 60%;}
-.pb70{padding-bottom: 70%;}
-.pb80{padding-bottom: 80%;}
-.pb90{padding-bottom: 90%;}
-.pb100{padding-bottom: 100%;}
-
-// rem
-.pb0-rem    {padding-bottom: 0;}
-.pb01-rem   {padding-bottom: 0.1rem;}
-.pb02-rem   {padding-bottom: 0.2rem;}
-.pb03-rem   {padding-bottom: 0.3rem;}
-.pb04-rem   {padding-bottom: 0.4rem;}
-.pb05-rem   {padding-bottom: 0.5rem;}
-.pb06-rem   {padding-bottom: 0.6rem;}
-.pb07-rem   {padding-bottom: 0.7rem;}
-.pb08-rem   {padding-bottom: 0.8rem;}
-.pb09-rem   {padding-bottom: 0.9rem;}
-.pb1-rem    {padding-bottom: 1rem;}
-.pb2-rem    {padding-bottom: 2rem;}
-.pb3-rem    {padding-bottom: 3rem;}
-.pb4-rem    {padding-bottom: 4rem;}
-.pb5-rem    {padding-bottom: 5rem;}
-.pb6-rem    {padding-bottom: 6rem;}
-.pb7-rem    {padding-bottom: 7rem;}
-.pb8-rem    {padding-bottom: 8rem;}
-.pb9-rem    {padding-bottom: 9rem;}
-
-// px
-.pb0-px   {padding-bottom: 0;}
-.pb1-px   {padding-bottom: 1px;}
-.pb2-px   {padding-bottom: 2px;}
-.pb3-px   {padding-bottom: 3px;}
-.pb4-px   {padding-bottom: 4px;}
-.pb5-px   {padding-bottom: 5px;}
-.pb6-px   {padding-bottom: 6px;}
-.pb7-px   {padding-bottom: 7px;}
-.pb8-px   {padding-bottom: 8px;}
-.pb9-px   {padding-bottom: 9px;}
-.pb10-px  {padding-bottom: 10px;}
-.pb20-px  {padding-bottom: 20px;}
-.pb30-px  {padding-bottom: 30px;}
-.pb40-px  {padding-bottom: 40px;}
-.pb50-px  {padding-bottom: 50px;}
-.pb60-px  {padding-bottom: 60px;}
-.pb70-px  {padding-bottom: 70px;}
-.pb80-px  {padding-bottom: 80px;}
-.pb90-px  {padding-bottom: 90px;}
-.pb100-px {padding-bottom: 100px;}
-.pb200-px {padding-bottom: 200px;}
-.pb300-px {padding-bottom: 300px;}
-.pb400-px {padding-bottom: 400px;}
-
-
-.py0{padding-bottom: 0;  padding-top: 0;}
-
-.py1{padding-bottom: $size-1; padding-top: $size-1}
-.py2{padding-bottom: $size-2; padding-top: $size-2}
-.py3{padding-bottom: $size-3; padding-top: $size-3}
-.py4{padding-bottom: $size-4; padding-top: $size-4}
-.py5{padding-bottom: $size-5; padding-top: $size-5}
-.py6{padding-bottom: $size-6; padding-top: $size-6}
-
-// %
-.py10{padding-bottom: 10%;  padding-top: 10%;}
-.py20{padding-bottom: 20%;  padding-top: 20%;}
-.py30{padding-bottom: 30%;  padding-top: 30%;}
-.py40{padding-bottom: 40%;  padding-top: 40%;}
-.py50{padding-bottom: 50%;  padding-top: 50%;}
-.py60{padding-bottom: 60%;  padding-top: 60%;}
-.py70{padding-bottom: 70%;  padding-top: 70%;}
-.py80{padding-bottom: 80%;  padding-top: 80%;}
-.py90{padding-bottom: 90%;  padding-top: 90%;}
-.py100{padding-bottom: 100%;  padding-top: 100%;}
-
-// rem
-.py0-rem    {padding-bottom: 0;  padding-top: 0;}
-.py01-rem   {padding-bottom: 0.1rem;  padding-top: 0.1rem;}
-.py02-rem   {padding-bottom: 0.2rem;  padding-top: 0.2rem;}
-.py03-rem   {padding-bottom: 0.3rem;  padding-top: 0.3rem;}
-.py04-rem   {padding-bottom: 0.4rem;  padding-top: 0.4rem;}
-.py05-rem   {padding-bottom: 0.5rem;  padding-top: 0.5rem;}
-.py06-rem   {padding-bottom: 0.6rem;  padding-top: 0.6rem;}
-.py07-rem   {padding-bottom: 0.7rem;  padding-top: 0.7rem;}
-.py08-rem   {padding-bottom: 0.8rem;  padding-top: 0.8rem;}
-.py09-rem   {padding-bottom: 0.9rem;  padding-top: 0.9rem;}
-.py1-rem    {padding-bottom: 1rem;  padding-top: 1rem;}
-.py2-rem    {padding-bottom: 2rem;  padding-top: 2rem;}
-.py3-rem    {padding-bottom: 3rem;  padding-top: 3rem;}
-.py4-rem    {padding-bottom: 4rem;  padding-top: 4rem;}
-.py5-rem    {padding-bottom: 5rem;  padding-top: 5rem;}
-.py6-rem    {padding-bottom: 6rem;  padding-top: 6rem;}
-.py7-rem    {padding-bottom: 7rem;  padding-top: 7rem;}
-.py8-rem    {padding-bottom: 8rem;  padding-top: 8rem;}
-.py9-rem    {padding-bottom: 9rem;  padding-top: 9rem;}
-
-// px
-.py0-px   {padding-bottom: 0;  padding-top: 0;}
-.py1-px   {padding-bottom: 1px;  padding-top: 1px;}
-.py2-px   {padding-bottom: 2px;  padding-top: 2px;}
-.py3-px   {padding-bottom: 3px;  padding-top: 3px;}
-.py4-px   {padding-bottom: 4px;  padding-top: 4px;}
-.py5-px   {padding-bottom: 5px;  padding-top: 5px;}
-.py6-px   {padding-bottom: 6px;  padding-top: 6px;}
-.py7-px   {padding-bottom: 7px;  padding-top: 7px;}
-.py8-px   {padding-bottom: 8px;  padding-top: 8px;}
-.py9-px   {padding-bottom: 9px;  padding-top: 9px;}
-.py10-px  {padding-bottom: 10px;  padding-top: 10px;}
-.py20-px  {padding-bottom: 20px;  padding-top: 20px;}
-.py30-px  {padding-bottom: 30px;  padding-top: 30px;}
-.py40-px  {padding-bottom: 40px;  padding-top: 40px;}
-.py50-px  {padding-bottom: 50px;  padding-top: 50px;}
-.py60-px  {padding-bottom: 60px;  padding-top: 60px;}
-.py70-px  {padding-bottom: 70px;  padding-top: 70px;}
-.py80-px  {padding-bottom: 80px;  padding-top: 80px;}
-.py90-px  {padding-bottom: 90px;  padding-top: 90px;}
-.py100-px {padding-bottom: 100px;  padding-top: 100px;}
-.py200-px {padding-bottom: 200px;  padding-top: 200px;}
-.py300-px {padding-bottom: 300px;  padding-top: 300px;}
-.py400-px {padding-bottom: 400px;  padding-top: 400px;}
-
-.px0{padding-left: 0;  padding-right: 0;}
-
-.px1{padding-left: $size-1; padding-right: $size-1}
-.px2{padding-left: $size-2; padding-right: $size-2}
-.px3{padding-left: $size-3; padding-right: $size-3}
-.px4{padding-left: $size-4; padding-right: $size-4}
-.px5{padding-left: $size-5; padding-right: $size-5}
-.px6{padding-left: $size-6; padding-right: $size-6}
-
-// %
-.px10{padding-left: 10%;  padding-right: 10%;}
-.px20{padding-left: 20%;  padding-right: 20%;}
-.px30{padding-left: 30%;  padding-right: 30%;}
-.px40{padding-left: 40%;  padding-right: 40%;}
-.px50{padding-left: 50%;  padding-right: 50%;}
-.px60{padding-left: 60%;  padding-right: 60%;}
-.px70{padding-left: 70%;  padding-right: 70%;}
-.px80{padding-left: 80%;  padding-right: 80%;}
-.px90{padding-left: 90%;  padding-right: 90%;}
-.px100{padding-left: 100%;  padding-right: 100%;}
-
-// rem
-.px0-rem    {padding-left: 0;  padding-right: 0;}
-.px01-rem   {padding-left: 0.1rem;  padding-right: 0.1rem;}
-.px02-rem   {padding-left: 0.2rem;  padding-right: 0.2rem;}
-.px03-rem   {padding-left: 0.3rem;  padding-right: 0.3rem;}
-.px04-rem   {padding-left: 0.4rem;  padding-right: 0.4rem;}
-.px05-rem   {padding-left: 0.5rem;  padding-right: 0.5rem;}
-.px06-rem   {padding-left: 0.6rem;  padding-right: 0.6rem;}
-.px07-rem   {padding-left: 0.7rem;  padding-right: 0.7rem;}
-.px08-rem   {padding-left: 0.8rem;  padding-right: 0.8rem;}
-.px09-rem   {padding-left: 0.9rem;  padding-right: 0.9rem;}
-.px1-rem    {padding-left: 1rem;  padding-right: 1rem;}
-.px2-rem    {padding-left: 2rem;  padding-right: 2rem;}
-.px3-rem    {padding-left: 3rem;  padding-right: 3rem;}
-.px4-rem    {padding-left: 4rem;  padding-right: 4rem;}
-.px5-rem    {padding-left: 5rem;  padding-right: 5rem;}
-.px6-rem    {padding-left: 6rem;  padding-right: 6rem;}
-.px7-rem    {padding-left: 7rem;  padding-right: 7rem;}
-.px8-rem    {padding-left: 8rem;  padding-right: 8rem;}
-.px9-rem    {padding-left: 9rem;  padding-right: 9rem;}
-
-// px
-.px0-px   {padding-left: 0;  padding-right: 0;}
-.px1-px   {padding-left: 1px;  padding-right: 1px;}
-.px2-px   {padding-left: 2px;  padding-right: 2px;}
-.px3-px   {padding-left: 3px;  padding-right: 3px;}
-.px4-px   {padding-left: 4px;  padding-right: 4px;}
-.px5-px   {padding-left: 5px;  padding-right: 5px;}
-.px6-px   {padding-left: 6px;  padding-right: 6px;}
-.px7-px   {padding-left: 7px;  padding-right: 7px;}
-.px8-px   {padding-left: 8px;  padding-right: 8px;}
-.px9-px   {padding-left: 9px;  padding-right: 9px;}
-.px10-px  {padding-left: 10px;  padding-right: 10px;}
-.px20-px  {padding-left: 20px;  padding-right: 20px;}
-.px30-px  {padding-left: 30px;  padding-right: 30px;}
-.px40-px  {padding-left: 40px;  padding-right: 40px;}
-.px50-px  {padding-left: 50px;  padding-right: 50px;}
-.px60-px  {padding-left: 60px;  padding-right: 60px;}
-.px70-px  {padding-left: 70px;  padding-right: 70px;}
-.px80-px  {padding-left: 80px;  padding-right: 80px;}
-.px90-px  {padding-left: 90px;  padding-right: 90px;}
-.px100-px {padding-left: 100px;  padding-right: 100px;}
-.px200-px {padding-left: 200px;  padding-right: 200px;}
-.px300-px {padding-left: 300px;  padding-right: 300px;}
-.px400-px {padding-left: 400px;  padding-right: 400px;}
+// For each direction (Top, Right, Bottom, Left)
+@each $direction in $directions{
+    // For each different variant (uns, ini, $size, %, rem, px)
+    @each $variant in $variants {
+        $currentDirectionIndex: index($directions, $direction);
+        $currentVariant: index($variants, $variant);
+        // For each different value (0, 1rem, 2rem, ...)
+        @each $value in $variant{
+            $currentValueList: nth($variantValues, $currentVariant);
+            $currentValueIndex: index($variant, $value);
+            $styleCount: length(nth($directions, $currentDirectionIndex));
+                    $valueToSet: nth($currentValueList, $currentValueIndex);
+                    $styles: nth($directions, $currentDirectionIndex);
+                    @if $styleCount > 1{
+                        .p#{nth($directionAb, $currentDirectionIndex)}#{$value}{
+                            #{nth($styles, 1)}: $valueToSet;
+                            #{nth($styles, 2)}: $valueToSet;
+                        }
+                    }
+                    @else{
+                        .p#{nth($directionAb, $currentDirectionIndex)}#{$value}{
+                            #{nth($styles, 1)}: $valueToSet;
+                        }
+                    }
+            $count:$count+1;
+        }
+    }
+}
+// For each screen size (xxl, xl, lg, ml, md, sm, xs)
+@each $size in $sizes{
+    @media only screen and (max-width: nth($screenSize,  index($sizes, $size))) {
+        // For each direction (Top, Right, Bottom, Left)
+        @each $direction in $directions{
+            // For each different variant (uns, ini, $size, %, rem, px)
+            @each $variant in $variants {
+                $currentDirectionIndex: index($directions, $direction);
+                $currentVariant: index($variants, $variant);
+                // For each different value (0, 1rem, 2rem, ...)
+                @each $value in $variant{
+                    $currentValueList: nth($variantValues, $currentVariant);
+                    $currentValueIndex: index($variant, $value);
+                    $styleCount: length(nth($directions, $currentDirectionIndex));
+                    $valueToSet: nth($currentValueList, $currentValueIndex);
+                    $styles: nth($directions, $currentDirectionIndex);
+                    @if $styleCount > 1{
+                        .p#{nth($directionAb, $currentDirectionIndex)}#{$value}#{$size}{
+                            #{nth($styles, 1)}: $valueToSet !important;
+                            #{nth($styles, 2)}: $valueToSet !important;
+                        }
+                    }
+                    @else{
+                        .p#{nth($directionAb, $currentDirectionIndex)}#{$value}#{$size}{
+                            #{nth($styles, 1)}: $valueToSet !important;
+                        }
+                    }
+                    $count:$count+1;
+                }
+            }
+        }
+    }
+}
+@debug "Added #{$count} padding classes";
