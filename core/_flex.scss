@@ -1,6 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////////////////
-//                          Flex Directions
-/////////////////////////////////////////////////////////////////////////////////////////
 @media only screen and (max-width: $xxlScreen) {
     .cxxl,
     .crxxl,
@@ -602,5 +599,26 @@
     }
 }
 
+.fdcr{
+    flex-direction: column-reverse;
+}
+.fdc{
+    flex-direction: column;
+}
+.fdrr{
+    flex-direction: row-reverse;
+}
+.fdr{
+    flex-direction: row;
+}
+.fww{
+    flex-wrap: wrap;
+}
+.fwwr{
+    flex-wrap: wrap-reverse;
+}
+.fwnr{
+    flex-wrap: nowrap;
+}
 
 
