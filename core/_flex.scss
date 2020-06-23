@@ -25,6 +25,7 @@
         flex-direction: column-reverse !important;
     }
 }
+
 @media only screen and (max-width: $xlScreen) {
     .cxl,
     .crxl,
@@ -52,6 +53,7 @@
         flex-direction: column-reverse !important;
     }
 }
+
 @media only screen and (max-width: $lgScreen) {
     .clg,
     .crlg,
@@ -79,6 +81,7 @@
         flex-direction: column-reverse !important;
     }
 }
+
 @media only screen and (max-width: $mlScreen) {
     .cml,
     .crml,
@@ -106,6 +109,7 @@
         flex-direction: column-reverse !important;
     }
 }
+
 @media only screen and (max-width: $mdScreen) {
     .cmd,
     .crmd,
@@ -133,6 +137,7 @@
         flex-direction: column-reverse !important;
     }
 }
+
 @media only screen and (max-width: $smScreen) {
     .csm,
     .crsm,
@@ -160,6 +165,7 @@
         flex-direction: column-reverse !important;
     }
 }
+
 @media only screen and (max-width: $xsScreen) {
     .cxs,
     .crxs,
@@ -187,35 +193,39 @@
         flex-direction: column-reverse !important;
     }
 }
+
 .r,
-.rxs,      .rsm,      .rmd,      .rml,      .rlg,      .rxl,      .rxxl,
-.r-c-xs,   .r-c-sm,   .r-c-md,   .r-c-ml,   .r-c-lg,   .r-c-xl,   .r-c-xxl,
-.r-rr-xs,  .r-rr-sm,  .r-rr-md,  .r-rr-ml,  .r-rr-lg,  .r-rr-xl,  .r-rr-xxl,
-.r-cr-xs,  .r-cr-sm,  .r-cr-md,  .r-cr-ml,  .r-cr-lg,  .r-cr-xl,  .r-cr-xxl, {
+.rxs, .rsm, .rmd, .rml, .rlg, .rxl, .rxxl,
+.r-c-xs, .r-c-sm, .r-c-md, .r-c-ml, .r-c-lg, .r-c-xl, .r-c-xxl,
+.r-rr-xs, .r-rr-sm, .r-rr-md, .r-rr-ml, .r-rr-lg, .r-rr-xl, .r-rr-xxl,
+.r-cr-xs, .r-cr-sm, .r-cr-md, .r-cr-ml, .r-cr-lg, .r-cr-xl, .r-cr-xxl, {
     display: flex;
     flex-direction: row;
 }
+
 .c,
-.cxs,      .csm,      .cmd,      .cml,      .clg,      .cxl,      .cxxl,
-.c-r-xs,   .c-r-sm,   .c-r-md,   .c-r-ml,   .c-r-lg,   .c-r-xl,   .c-r-xxl,
-.c-rr-xs,  .c-rr-sm,  .c-rr-md,  .c-rr-ml,  .c-rr-lg,  .c-rr-xl,  .c-rr-xxl,
-.c-cr-xs,  .c-cr-sm,  .c-cr-md,  .c-cr-ml,  .c-cr-lg,  .c-cr-xl,  .c-cr-xxl, {
+.cxs, .csm, .cmd, .cml, .clg, .cxl, .cxxl,
+.c-r-xs, .c-r-sm, .c-r-md, .c-r-ml, .c-r-lg, .c-r-xl, .c-r-xxl,
+.c-rr-xs, .c-rr-sm, .c-rr-md, .c-rr-ml, .c-rr-lg, .c-rr-xl, .c-rr-xxl,
+.c-cr-xs, .c-cr-sm, .c-cr-md, .c-cr-ml, .c-cr-lg, .c-cr-xl, .c-cr-xxl, {
     display: flex;
     flex-direction: column;
 }
+
 .rr,
-.rrxs,      .rrsm,      .rrmd,      .rrml,      .rrlg,      .rrxl,      .rrxxl,
-.rr-c-xs,   .rr-c-sm,   .rr-c-md,   .rr-c-ml,   .rr-c-lg,   .rr-c-xl,   .rr-c-xxl,
-.rr-r-xs,   .rr-r-sm,   .rr-r-md,   .rr-r-ml,   .rr-r-lg,   .rr-r-xl,   .rr-r-xxl,
-.rr-cr-xs,  .rr-cr-sm,  .rr-cr-md,  .rr-cr-ml,  .rr-cr-lg,  .rr-cr-xl,  .rr-cr-xxl, {
+.rrxs, .rrsm, .rrmd, .rrml, .rrlg, .rrxl, .rrxxl,
+.rr-c-xs, .rr-c-sm, .rr-c-md, .rr-c-ml, .rr-c-lg, .rr-c-xl, .rr-c-xxl,
+.rr-r-xs, .rr-r-sm, .rr-r-md, .rr-r-ml, .rr-r-lg, .rr-r-xl, .rr-r-xxl,
+.rr-cr-xs, .rr-cr-sm, .rr-cr-md, .rr-cr-ml, .rr-cr-lg, .rr-cr-xl, .rr-cr-xxl, {
     display: flex;
     flex-direction: row-reverse;
 }
+
 .cr,
-.crxs,      .crsm,      .crmd,      .crml,      .crlg,      .crxl,      .crxxl,
-.cr-c-xs,   .cr-c-sm,   .cr-c-md,   .cr-c-ml,   .cr-c-lg,   .cr-c-xl,   .cr-c-xxl,
-.cr-r-xs,   .cr-r-sm,   .cr-r-md,   .cr-r-ml,   .cr-r-lg,   .cr-r-xl,   .cr-r-xxl,
-.cr-rr-xs,  .cr-rr-sm,  .cr-rr-md,  .cr-rr-ml,  .cr-rr-lg,  .cr-rr-xl,  .cr-rr-xxl, {
+.crxs, .crsm, .crmd, .crml, .crlg, .crxl, .crxxl,
+.cr-c-xs, .cr-c-sm, .cr-c-md, .cr-c-ml, .cr-c-lg, .cr-c-xl, .cr-c-xxl,
+.cr-r-xs, .cr-r-sm, .cr-r-md, .cr-r-ml, .cr-r-lg, .cr-r-xl, .cr-r-xxl,
+.cr-rr-xs, .cr-rr-sm, .cr-rr-md, .cr-rr-ml, .cr-rr-lg, .cr-rr-xl, .cr-rr-xxl, {
     display: flex;
     flex-direction: column-reverse;
 }
@@ -599,25 +609,99 @@
     }
 }
 
-.fdcr{
+.afe {
+    align-items: flex-end;
+}
+
+.afs {
+    align-items: flex-start;
+}
+
+.ac {
+    align-items: center;
+}
+
+.as {
+    align-items: stretch;
+}
+
+.ab {
+    align-items: baseline;
+}
+
+.acfe {
+    align-content: flex-end;
+}
+
+.acfs {
+    align-content: flex-start;
+}
+
+.acc {
+    align-content: center;
+}
+
+.acs {
+    align-content: stretch;
+}
+
+.acsa {
+    align-content: space-around;
+}
+
+.acsb {
+    align-content: space-between;
+}
+
+.jfe {
+    justify-content: flex-end;
+}
+
+.jfs {
+    justify-content: flex-start;
+}
+
+.jc {
+    justify-content: center;
+}
+
+.jse {
+    justify-content: space-evenly;
+}
+
+.jsb {
+    justify-content: space-between;
+}
+
+.jsa {
+    justify-content: space-around;
+}
+
+.fdcr {
     flex-direction: column-reverse;
 }
-.fdc{
+
+.fdc {
     flex-direction: column;
 }
-.fdrr{
+
+.fdrr {
     flex-direction: row-reverse;
 }
-.fdr{
+
+.fdr {
     flex-direction: row;
 }
-.fww{
+
+.fww {
     flex-wrap: wrap;
 }
-.fwwr{
+
+.fwwr {
     flex-wrap: wrap-reverse;
 }
-.fwnr{
+
+.fwnr {
     flex-wrap: nowrap;
 }
 
