@@ -1,6 +1,6 @@
 @media only screen and (max-width: $xxlScreen){
-    .w-uns-xxl{bottom: unset !important;}
-    .w-ini-xxl{bottom: initial !important;}
+    .w-uns-xxl{width: unset !important;}
+    .w-ini-xxl{width: initial !important;}
     .w0-xxl{width: 0 !important;}
     .w5-xxl{width: 5% !important;}
     .w10-xxl{width: 10% !important;}
@@ -24,8 +24,8 @@
     .w100-xxl{width: 100% !important;}
 }
 @media only screen and (max-width: $xlScreen){
-    .w-uns-xl{bottom: unset !important;}
-    .w-ini-xl{bottom: initial !important;}
+    .w-uns-xl{width: unset !important;}
+    .w-ini-xl{width: initial !important;}
     .w0-xl{width: 0 !important;}
     .w5-xl{width: 5% !important;}
     .w10-xl{width: 10% !important;}
@@ -50,8 +50,8 @@
 
 }
 @media only screen and (max-width: $lgScreen){
-    .w-uns-lg{bottom: unset !important;}
-    .w-ini-lg{bottom: initial !important;}
+    .w-uns-lg{width: unset !important;}
+    .w-ini-lg{width: initial !important;}
     .w0-lg{width: 0 !important;}
     .w5-lg{width: 5% !important;}
     .w10-lg{width: 10% !important;}
@@ -75,8 +75,8 @@
     .w100-lg{width: 100% !important;}
 }
 @media only screen and (max-width: $mlScreen){
-    .w-uns-ml{bottom: unset !important;}
-    .w-ini-ml{bottom: initial !important;}
+    .w-uns-ml{width: unset !important;}
+    .w-ini-ml{width: initial !important;}
     .w0-ml{width: 0 !important;}
     .w5-ml{width: 5% !important;}
     .w10-ml{width: 10% !important;}
@@ -100,8 +100,8 @@
     .w100-ml{width: 100% !important;}
 }
 @media only screen and (max-width: $mdScreen){
-    .w-uns-md{bottom: unset !important;}
-    .w-ini-md{bottom: initial !important;}
+    .w-uns-md{width: unset !important;}
+    .w-ini-md{width: initial !important;}
     .w0-md{width: 0 !important;}
     .w5-md{width: 5% !important;}
     .w10-md{width: 10% !important;}
@@ -125,8 +125,8 @@
     .w100-md{width: 100% !important;}
 }
 @media only screen and (max-width: $smScreen){
-    .w-uns-sm{bottom: unset !important;}
-    .w-ini-sm{bottom: initial !important;}
+    .w-uns-sm{width: unset !important;}
+    .w-ini-sm{width: initial !important;}
     .w0-sm{width: 0 !important;}
     .w5-sm{width: 5% !important;}
     .w10-sm{width: 10% !important;}
@@ -150,8 +150,8 @@
     .w100-sm{width: 100% !important;}
 }
 @media only screen and (max-width: $xsScreen){
-    .w-uns-xs{bottom: unset !important;}
-    .w-ini-xs{bottom: initial !important;}
+    .w-uns-xs{width: unset !important;}
+    .w-ini-xs{width: initial !important;}
     .w0-xs{width: 0 !important;}
     .w5-xs{width: 5% !important;}
     .w10-xs{width: 10% !important;}
@@ -174,8 +174,8 @@
     .w95-xs{width: 95% !important;}
     .w100-xs{width: 100% !important;}
 }
-.w-uns{bottom: unset;}
-.w-ini{bottom: initial;}
+.w-uns{width: unset;}
+.w-ini{width: initial;}
 .w0{width: 0;}
 .w5{width: 5%;}
 .w10{width: 10%;}
