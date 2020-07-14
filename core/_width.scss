@@ -1,3 +1,36 @@
+.w-uns{width: unset;}
+.w-ini{width: initial;}
+.w0{width: 0;}
+.w5{width: 5%;}
+.w10{width: 10%;}
+.w15{width: 15%;}
+.w20{width: 20%;}
+.w25{width: 25%;}
+.w30{width: 30%;}
+.w35{width: 35%;}
+.w40{width: 40%;}
+.w45{width: 45%;}
+.w50{width: 50%;}
+.w55{width: 55%;}
+.w60{width: 60%;}
+.w65{width: 65%;}
+.w70{width: 70%;}
+.w75{width: 75%;}
+.w80{width: 80%;}
+.w85{width: 85%;}
+.w90{width: 90%;}
+.w95{width: 95%;}
+.w100{width: 100%;}
+
+.mwxxl{max-width: $xxlScreen;}
+.mwxl{max-width: $xlScreen;}
+.mwlg{max-width: $lgScreen;}
+.mwml{max-width: $mlScreen;}
+.mwmd{max-width: $mdScreen;}
+.mwsm{max-width: $smScreen;}
+.mwxs{max-width: $xsScreen;}
+
+
 @media only screen and (max-width: $xxlScreen){
     .w-uns-xxl{width: unset !important;}
     .w-ini-xxl{width: initial !important;}
@@ -173,35 +206,5 @@
     .w90-xs{width: 90% !important;}
     .w95-xs{width: 95% !important;}
     .w100-xs{width: 100% !important;}
-}
-.w-uns{width: unset;}
-.w-ini{width: initial;}
-.w0{width: 0;}
-.w5{width: 5%;}
-.w10{width: 10%;}
-.w15{width: 15%;}
-.w20{width: 20%;}
-.w25{width: 25%;}
-.w30{width: 30%;}
-.w35{width: 35%;}
-.w40{width: 40%;}
-.w45{width: 45%;}
-.w50{width: 50%;}
-.w55{width: 55%;}
-.w60{width: 60%;}
-.w65{width: 65%;}
-.w70{width: 70%;}
-.w75{width: 75%;}
-.w80{width: 80%;}
-.w85{width: 85%;}
-.w90{width: 90%;}
-.w95{width: 95%;}
-.w100{width: 100%;}
 
-.mwxxl{max-width: $xxlScreen;}
-.mwxl{max-width: $xlScreen;}
-.mwlg{max-width: $lgScreen;}
-.mwml{max-width: $mlScreen;}
-.mwmd{max-width: $mdScreen;}
-.mwsm{max-width: $smScreen;}
-.mwxs{max-width: $xsScreen;}
+}
