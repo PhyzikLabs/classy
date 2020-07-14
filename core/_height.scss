@@ -1,4 +1,4 @@
-@media only screen and (max-height: $xxlScreen){
+@media only screen and (max-width: $xxlScreen){
     .h-uns-xxl{height: unset !important;}
     .h-ini-xxl{height: initial !important;}
     .h0-xxl{height: 0 !important;}
@@ -23,7 +23,7 @@
     .h95-xxl{height: 95% !important;}
     .h100-xxl{height: 100% !important;}
 }
-@media only screen and (max-height: $xlScreen){
+@media only screen and (max-width: $xlScreen){
     .h-uns-xl{height: unset !important;}
     .h-ini-xl{height: initial !important;}
     .h0-xl{height: 0 !important;}
@@ -48,7 +48,7 @@
     .h95-xl{height: 95% !important;}
     .h100-xl{height: 100% !important}
 }
-@media only screen and (max-height: $lgScreen){
+@media only screen and (max-width: $lgScreen){
     .h-uns-lg{height: unset !important;}
     .h-ini-lg{height: initial !important;}
     .h0-lg{height: 0 !important;}
@@ -73,7 +73,7 @@
     .h95-lg{height: 95% !important;}
     .h100-lg{height: 100% !important;}
 }
-@media only screen and (max-height: $mlScreen){
+@media only screen and (max-width: $mlScreen){
     .h-uns-ml{height: unset !important;}
     .h-ini-ml{height: initial !important;}
     .h0-ml{height: 0 !important;}
@@ -98,7 +98,7 @@
     .h95-ml{height: 95% !important;}
     .h100-ml{height: 100% !important;}
 }
-@media only screen and (max-height: $mdScreen){
+@media only screen and (max-width: $mdScreen){
     .h-uns-md{height: unset !important;}
     .h-ini-md{height: initial !important;}
     .h0-xs{height: 0 !important;}
@@ -123,7 +123,7 @@
     .h95-md{height: 95% !important;}
     .h100-md{height: 100% !important;}
 }
-@media only screen and (max-height: $smScreen){
+@media only screen and (max-width: $smScreen){
     .h-uns-sm{height: unset !important;}
     .h-ini-sm{height: initial !important;}
     .h0-sm{height: 0 !important;}
@@ -148,7 +148,7 @@
     .h95-sm{height: 95% !important;}
     .h100-sm{height: 100% !important;}
 }
-@media only screen and (max-height: $xsScreen){
+@media only screen and (max-width: $xsScreen){
     .h-uns-xs{height: unset !important;}
     .h-ini-xs{height: initial !important;}
     .h0-xs{height: 0 !important;}
